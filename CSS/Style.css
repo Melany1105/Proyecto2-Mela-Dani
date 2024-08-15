@@ -1,0 +1,427 @@
+body {
+    margin: 0;
+    
+}
+
+.box__Menu {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    box-shadow: 0 0 7px gray;
+    position: fixed;
+    z-index: 3;
+}
+
+.img__LogoMenu {
+    width: 90px;
+    height: 70px;
+    margin: 0;
+    position: sticky;
+    right: 92%;
+}
+
+.img__LogoMenu:hover {
+    cursor: pointer;
+}
+
+.box__imagenGrande {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 5px 10px gray;
+    margin-bottom: 5%;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://phantom-marca.unidadeditorial.es/e4018958e8da59548782522f747d172a/resize/828/f/jpg/assets/multimedia/imagenes/2023/02/21/16770015046064.png') no-repeat center center/cover;
+    filter: blur(7px);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposición negra semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.overlay h1 {
+    font-family: sans-serif;
+    font-size: 10vh; 
+    margin: 0;
+}
+
+.Contenedor_global {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 95%;
+    box-shadow: 0 0 2px lightgray;
+    flex-wrap: wrap;
+}
+
+.box__Identidad{
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    font-family:sans-serif; 
+    background-color: white;
+    padding: 15px;
+}
+.box__Identidad h3{
+    font-style: italic;
+    font-size: 3vh;
+    margin-bottom: 0.5em;
+}
+.box__Identidad p{
+    line-height: 1.5;
+    font-size: 2vh;
+    font-style: italic;
+}
+.Contenedor-carousel {
+    width: 30%;
+    margin: auto;
+}
+.Contenedor-carousel h1 {
+    font-family: sans-serif;
+    font-size: 4vh; 
+    margin: auto;
+    font-style: italic;
+    padding: 15px;
+    color: gray;
+    text-align: center;
+}
+@media (max-width: 1050px) {
+    .Contenedor-carousel {
+        width: 50%;
+    }
+}
+@media (max-width: 450px) {
+    .Contenedor-carousel {
+        width: 95%;
+    }
+    .overlay h1 {
+        font-size: 50px; 
+    }
+}
+
+
+.box__tenis {
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    box-shadow: 0 0 2px lightgray;
+    width: 95%;
+}
+
+.link__teni {
+    text-decoration: none;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.item__tenis {
+    width: 95%;
+    box-shadow: 0 0 1px gray;
+    transition: box-shadow 0.2s ease;
+    margin: 2.5% auto;
+}
+
+.item__tenis:hover {
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+}
+
+.box__centrarTenis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__tenis {
+    width: 100%;
+    height: 45vh;
+}
+
+.texto__descripcionTenis {
+    margin-top: 2px;
+    margin-left: 11%;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+footer {
+    box-shadow: 0 0 10px gray;
+}
+.footer-main {
+    margin: auto;
+}
+.footer-content {
+    background-color: black;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    padding: 5px;
+    background-color: #dbd8e3;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.social-links a i {
+    margin: 5%;
+    font-size: 1.1rem;
+    color: #201e1e;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links p {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.links a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #dbd8e3;
+    transition: 0.5s all;
+    margin-left: 4%;
+}
+
+.links a:hover {
+    color: #303035;
+}
+
+.texto__contactos {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #dbd8e3;
+    padding: 2.5% 0;
+    margin-left: 4%;
+}
+
+.box__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #201e1e;
+    padding: 2%;
+    border-radius: 2px;
+    height: 40vh;
+    margin: auto;
+}
+
+.box__textoForm {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.txt__EmailForm {
+    border-radius: 0;
+    margin-bottom: 5%;
+    outline: none;
+}
+
+.texto__terminosPrivacidad {
+    color: white;
+    margin-bottom: 5%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn__registrarse {
+    cursor: pointer;
+    background-color: white;
+    height: 5vh;
+    color: black;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 2.5%;
+}
+
+.btn__registrarse:hover {
+    background-color: #201e1e;
+    color: white;
+    border: 0;
+    box-shadow: 0 0 2.5px lightgray;
+}
+
+.box__Menu {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    text-decoration: none;
+    display: grid;
+    box-shadow: 0 0 7px gray;
+    position: fixed;
+    z-index: 3;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "title img";
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img__LogoMenu {
+    width: 90px;
+    height: 70px;
+    margin: 0;
+    position: sticky;
+    right: 92%;
+}
+
+.img__LogoMenu:hover {
+    cursor: pointer;
+}
+
+.Menu {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    
+    right: -250px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    transition: right 0.3s ease;
+}
+
+.Menu.open {
+    right: 0;
+    width: 30vh;
+}
+
+.Menu__Header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.Menu__Despe {
+    padding: 1rem;
+}
+
+.Menu__Despe a {
+    display: block;
+    font-family: sans-serif;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.Menu__Despe a:hover {
+    background-color: #f8f9fa;
+    color: #333; 
+    outline: none;  
+    text-decoration: none;  
+}
+
+.barra {
+    height: 2.7em;
+    margin-right: 2vh;
+}
+
+#menuButton {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: 1px solid lightgray;
+    color: lightgray;
+}
+
+#menuButton:hover {
+    background-color: #e9ecef;
+}
+
+#closeButton {
+    color: black;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s;
+}
+
+#closeButton:hover {
+    background-color: lightgray;
+    color: white;
+    outline: none;
+    box-shadow: none; 
+   
+}
+
+.animated-text {
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.animated-text.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.spacer {
+    height: 100vh;
+}
+
+.grafico {
+    width: 95%;
+    margin: auto;
+    box-shadow: 0 0 2px lightgray;
+    padding: 20px;
+    margin-bottom: 5%;
+}
+
+.grafico h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 3vh;
+    margin-bottom: 0.5em;
+    color: gray;
+    font-weight: 0;
+}

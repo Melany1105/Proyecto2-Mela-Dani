@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    padding-top: 90px;
+    font-family: sans-serif;
+}
+
+.box__Menu {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    box-shadow: 0 0 7px gray;
+    position: fixed;
+    top: 0;
+}
+
+.img__LogoMenu {
+    width: 90px;
+    height: 70px;
+    position: sticky;
+    right: 92%;
+}
+
+.img__LogoMenu:hover {
+    cursor: pointer;
+}
+
+.box__tenis {
+    width: 80%;
+    display: flex;
+    box-sizing: border-box;
+    flex: wrap;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 0 0 5px gray;
+    margin-bottom: 5%;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img__teni {
+    width: 100%;
+    border-radius: 2px;
+    max-width: 500px;
+    margin: auto;
+
+}
+
+.box__informaciontenis {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 80%;
+    margin: auto;
+}
+
+.texto__descripcion {
+    padding: 5px;
+    padding-right: 7%;
+    font-size: 100%;
+}
+
+.texto__informacion {
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.texto__ubicacion {
+    font-size: 12px;
+    color: gray;
+}
+
+.texto__precio {
+    font-size: 25px;
+    font-weight: bold;
+}
+.tiempos_entrega div{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.imagen_estrellas {
+    width: 90px;
+    margin: 0;
+}
+.box__tallasBoton {
+    display: flex;
+    flex-direction: column;
+}
+
+.Tallas button {
+    background-color: black;
+    border: 2px solid #fff;
+    color: lightgray;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 2.5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.Tallas button:hover {
+    background-color: gray;
+    color: black;
+}
+
+
+.button__agregarCarrito {
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 50%;
+    height: 10vh;
+    margin-top: 2%;
+    background-color: black;
+    color: lightgray;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    margin-bottom: 5%;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button__agregarCarrito:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.success-message {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #302d2d;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    z-index: 1000;
+}
+
+.success-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+.talla.presionado{
+    background-color: gray;
+    color: black;
+}
+
+footer {
+    box-shadow: 0 0 10px gray;
+}
+.footer-main {
+    margin: auto;
+}
+.footer-content {
+    background-color: black;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    padding: 5px;
+    background-color: #dbd8e3;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.social-links a i {
+    margin: 5%;
+    font-size: 1.1rem;
+    color: #201e1e;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links p {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.links a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #dbd8e3;
+    transition: 0.5s all;
+    margin-left: 4%;
+}
+
+.links a:hover {
+    color: #303035;
+}
+
+.texto__contactos {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #dbd8e3;
+    padding: 2.5% 0;
+    margin-left: 4%;
+}
+
+.box__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #201e1e;
+    padding: 2%;
+    border-radius: 2px;
+    height: 40vh;
+    margin: auto;
+}
+
+.box__textoForm {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.txt__EmailForm {
+    border-radius: 0;
+    margin-bottom: 5%;
+    outline: none;
+}
+
+.texto__terminosPrivacidad {
+    color: white;
+    margin-bottom: 5%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn__registrarse {
+    cursor: pointer;
+    background-color: white;
+    height: 5vh;
+    color: black;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 2.5%;
+}
+
+.btn__registrarse:hover {
+    background-color: #201e1e;
+    color: white;
+    border: 0;
+    box-shadow: 0 0 2.5px lightgray;
+}
+
+@media (max-width: 900px) {
+    .box__tenis {
+        flex-direction: column;
+    }
+    .button__agregarCarrito {
+        width: 90%;
+    }
+}
+
+.box__Menu {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    box-shadow: 0 0 7px gray;
+    position: fixed;
+    z-index: 3;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "title img";
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img__LogoMenu {
+    width: 90px;
+    height: 70px;
+    margin: 0;
+    position: sticky;
+    right: 92%;
+}
+
+.img__LogoMenu:hover {
+    cursor: pointer;
+}
+
+.Menu {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    transition: right 0.3s ease;
+}
+
+.Menu.open {
+    right: 0;
+    width: 30vh;
+}
+
+.Menu__Header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.Menu__Despe {
+    padding: 1rem;
+}
+
+.Menu__Despe a {
+    display: block;
+    font-family: sans-serif;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.Menu__Despe a:hover {
+    background-color: #f8f9fa;
+}
+
+.barra {
+    margin-right: 2vh;
+}
+
+#menuButton {
+    width: 4.7vh;
+    height: 4.8vh;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: 1px solid lightgray;
+    color: lightgray;
+}
+
+#menuButton:hover {
+    background-color: #e9ecef;
+}
+
+#closeButton {
+    color: black;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s;
+    height: 4vh;
+    width: 3.5vh;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#closeButton:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+#tenisReviews {
+    box-shadow: 0 0 2px gray;
+    padding: 10px;
+}
+
+.Titulo_resenna {
+    font-weight: bold;
+}
+
+.Contenedor_resenna {
+    box-shadow: 0 0 1px gray;
+    padding: 5px;
+    margin-top: 2%;
+}

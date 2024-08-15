@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="../../IMG/Logo.jpg" type="icon">
+  <title>Acerca de</title>
+</head>
+
+<body>
+  <nav class="box__Menu">
+    <a class="img__LogoMenu" href="../../index.html">
+        <img class="img__LogoMenu" src="../../IMG/Logo.jpg" alt="Logo de la página CoolStreet">
+    </a>
+    <div class="barra">
+        <button class="btn btn-outline-secondary" id="menuButton">☰</button>
+    </div>
+    <div class="Menu" id="Menu">
+        <div class="Menu__Header">
+            <button class="btn btn-link" id="closeButton">X</button>
+        </div>
+        <div class="Menu__Despe">
+          <a href="../../index.html">Inicio</a>
+            <a href="../Hombre/hombre.html">Hombre</a>
+            <a href="../Mujer/mujer.html">Mujer</a>
+            <a href="../Proceso Compra/Carrito.html">Proceso de compra</a>
+            <a href="../Contactos/Contactos.html">Contacto</a>
+            <a href="../Preguntas Frecuentes/Preguntas.html">Preguntas frecuentes</a>
+            
+        </div>
+    </div>
+</nav>
+  <main>
+    <section>
+      <div class="box__Principal">
+        <div class="box__Titulo">
+          <h1>Acerca de nosotros</h1>
+        </div>
+        <div class="box__Organizadores">
+          <div class="item__Organizadores">
+            <img src="img/WhatsApp Image 2024-06-23 at 7.47.44 AM.jpeg" alt="Melany Arias">
+            <div class="texto__informacion">
+              <h2>Melany Arias Campos</h2>
+              <p>Cédula: 208660797</p>
+              <p>Email: melany.arias.967806@gmail.com</p>
+              <p>Melany es una de nuestras organizadoras, se encarga de mantenernos actualizados cada día con las
+                últimas
+                noticias y novedades. Además, desempeña un papel fundamental en la administración de nuestra tienda en
+                línea.</p>
+            </div>
+          </div>
+          <div class="item__Organizadores">
+            <img src="img/fotoDaniel.jfif" alt="Daniel Agüero">
+            <div class="texto__informacion">
+              <h2>Daniel Agüero Agüero</h2>
+              <p>Cédula: 208520063</p>
+              <p>Email: aguerodaniel582@gmail.com</p>
+              <p>Daniel es el encargado de que nuestra página y nuestra tienda estén llenas de buen estilo. Además, se
+                asegura de que todos nuestros productos sean presentados de la mejor manera posible y que el diseño de
+                nuestra web sea atractivo y funcional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer id="Section__contactos" class="Contactos">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="links">
+                    <p>CoolStreet | Información</p>                   
+                    <a href="../Contactos/Contactos.html" class="link">Acerca de</a>
+                    <a href="../Preguntas Frecuentes/Preguntas.html" class="link">Preguntas frecuentes</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="https://www.twitter.com"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="https://www.tiktok.com"><i class="ph-fill ph-tiktok-logo"></i></a>
+                    <a href="https://www.facebook.com"><i class="ph-fill ph-facebook-logo"></i></a>
+                </div>
+                <div class="links">
+                    <p>Contáctanos</p>
+                    <span class="texto__contactos">Email: coolstreet2004@gmail.com</span>
+                    <span class="texto__contactos">Número: 8723-7230</span>
+                    <p>Dirección</p>
+                    <span class="texto__contactos">La Sabana, 75 metros al oeste del Hotel Hilton</span>
+                </div>
+            </div>
+            <form action="" class="box__form">
+                <p class="box__textoForm">
+                    Regístrate para enterarte de todo lo nuevo de la tienda
+                </p>
+                <input class="txt__EmailForm" type="text" placeholder="ejemplo@gmail.com">
+                <label class="texto__terminosPrivacidad" for="terminosYCondiciones">
+                    <input type="checkbox" id="terminosYCondiciones">
+                    Acepta todos los términos de privacidad
+                </label>
+                <button class="btn__registrarse">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</footer>
+  <script>
+    document.getElementById('menuButton').addEventListener('click', function () {
+        document.getElementById('Menu').classList.toggle('open');
+    });
+
+    document.getElementById('closeButton').addEventListener('click', function () {
+        document.getElementById('Menu').classList.remove('open');
+    });
+    
+</script>
+</body>
+
+</html>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
